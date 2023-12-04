@@ -1,0 +1,48 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>InquiryDeskServlet</servlet-name>
+		<display-name>InquiryDeskServlet</display-name>
+		<description></description>
+		<servlet-class>com.epam.rd.irctc.controller.InquiryDeskServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>InquiryDeskDataInitializerServlet</servlet-name>
+		<display-name>InquiryDeskDataInitializerServlet</display-name>
+		<description></description>
+		<servlet-class>com.epam.rd.irctc.controller.InquiryDeskDataInitializerServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>TicketCounterServlet</servlet-name>
+		<display-name>TicketCounterServlet</display-name>
+		<description></description>
+		<servlet-class>com.epam.rd.irctc.controller.TicketCounterServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>BookingValidatorServlet</servlet-name>
+		<display-name>BookingValidatorServlet</display-name>
+		<description></description>
+		<servlet-class>com.epam.rd.irctc.controller.BookingValidatorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InquiryDeskServlet</servlet-name>
+		<url-pattern>/InquiryDesk</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>InquiryDeskDataInitializerServlet</servlet-name>
+		<url-pattern>/intialdata.jsp</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TicketCounterServlet</servlet-name>
+		<url-pattern>/TicketCounter</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BookingValidatorServlet</servlet-name>
+		<url-pattern>/BookingValidator</url-pattern>
+	</servlet-mapping>
+</web-app>
